@@ -1,0 +1,273 @@
+body {
+  text-align: center;
+  padding: 100px;
+  font-family: "Indie Flower";
+}
+
+.wrapper {
+  text-align: center;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  background-color: white;
+  width: 400px;
+  float: left;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  cursor: pointer;
+}
+
+.gamefield {
+  margin: auto;
+  position: relative;
+  display: inline-block;
+  background-color: #092A50;
+  width: 580px;
+  border-radius: 20px;
+  border-color: black;
+  border-width: 2px;
+  border-style: solid;
+}
+
+.box {
+  padding: 10px;
+  padding-bottom: 50px;
+  padding-top: 0px;
+  border-color: gray;
+  border-style: none;
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  font-size: 60px;
+  color: black;
+}
+
+.row1 {
+  display: inline-block;
+  margin-left: 6px;
+}
+
+.row2 {
+  display: inline-block;
+  margin-top: -5px;
+  border-style: groove;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+}
+
+.row3 {
+  display: inline-block;
+  margin-top: -5px;
+  border-top: groove;
+}
+
+.oo {
+  //border-left:none;
+  //border-top:none;
+}
+
+.ot {
+  border-left: groove;
+  border-right: groove;
+}
+
+.tt {
+  border-left: groove;
+  border-right: groove;
+}
+
+.tht {
+  border-right: groove;
+  border-left: groove;
+  border-bottom: none;
+}
+
+.clear {
+  float: center;
+}
+
+.controls {
+  background-color: #092A50;
+  padding: 10px;
+  width: 170px;
+  float: left;
+  border-top-right-radius: 20px;
+}
+
+.select {
+  font-weight: bold;
+  color: black;
+  font-size: 30px;
+}
+
+.x,
+.o {
+  margin: 5px;
+  font-size: 30px;
+  border-radius: 25px;
+  color: black;
+  width: 50px;
+  font-weight: bold;
+  padding: 0px;
+  vertical-align: middle;
+}
+
+.clear {
+  margin-top: 30px;
+  font-size: 25px;
+  border-radius: 25px;
+  font-weight: bold;
+  width: 70px;
+  color: black;
+  padding: 5px;
+}
+
+.linehortop {
+  position: absolute;
+  width: 350px;
+  height: 3px;
+  background-color: black;
+  margin-top: 45px;
+  margin-left: 10px;
+  margin-right: auto;
+  align: middle;
+}
+
+.linehorcent {
+  position: absolute;
+  width: 350px;
+  height: 3px;
+  background-color: black;
+  margin-top: 143px;
+  margin-left: 10px;
+  margin-right: auto;
+}
+
+.linehorbot {
+  position: absolute;
+  width: 350px;
+  height: 3px;
+  background-color: black;
+  margin-top: 241px;
+  margin-left: 10px;
+  margin-right: auto;
+}
+
+.linevertleft {
+  position: absolute;
+  width: 3px;
+  height: 320px;
+  background-color: black;
+  margin-top: -10px;
+  margin-left: 75px;
+  margin-right: auto;
+}
+
+.linevertcent {
+  position: absolute;
+  width: 3px;
+  height: 320px;
+  background-color: black;
+  margin-top: -10px;
+  margin-left: 180px;
+  margin-right: auto;
+}
+
+.linevertright {
+  position: absolute;
+  width: 3px;
+  height: 320px;
+  background-color: black;
+  margin-top: -10px;
+  margin-left: 290px;
+  margin-right: auto;
+}
+
+.linediagonallr {
+  position: absolute;
+  width: 3px;
+  height: 420px;
+  background-color: black;
+  margin-top: -10px;
+  margin-left: 50px;
+  margin-right: auto;
+  -webkit-transform: translateY(-55px) translateX(130px) rotate(-46deg);
+}
+
+.linediagonalrl {
+  position: absolute;
+  width: 3px;
+  height: 420px;
+  background-color: black;
+  margin-top: -10px;
+  margin-left: 50px;
+  margin-right: auto;
+  -webkit-transform: translateY(-55px) translateX(130px) rotate(46deg);
+}
+
+.c {
+  color: white;
+}
+
+@keyframes wina {
+  0% {
+    color: black;
+  }
+  25% {
+    color: green;
+  }
+  50% {
+    color: red;
+  }
+  75% {
+    color: gray;
+  }
+  100% {
+    color: yellow;
+  }
+}
+
+@keyframes losea {
+  0% {
+    color: black;
+  }
+  100% {
+    color: gray;
+  }
+}
+
+.win {
+  position: absolute;
+  padding: 80px;
+  padding-left: 90px;
+  font-size: 50px;
+  color: black;
+  margin-top: 20px;
+  animation-name: wina;
+  animation-duration: 1s;
+  animation-iteration-count: 5;
+  font-weight: bold;
+}
+
+.lose {
+  position: absolute;
+  padding: 80px;
+  padding-left: 90px;
+  margin-top: 20px;
+  font-size: 50px;
+  color: black;
+  animation-name: losea;
+  animation-duration: 2s;
+  animation-iteration-count: 3;
+  font-weight: bold;
+}
+
+.anim {
+  animation-name: wina;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
