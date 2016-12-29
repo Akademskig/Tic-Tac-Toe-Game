@@ -1,4 +1,5 @@
-  $(document).ready(function(){
+$(document).ready(function(){
+  
   var xo;
   var comp;
   var x = 0;
@@ -6,8 +7,7 @@
   $(".x").on("click", function() {
     xo = "x";
     comp = "o";
-    $(".select,.x,.o").removeClass("anim");
-      
+    $(".select,.x,.o").removeClass("anim");    
   })  
   $(".o").on("click", function() {
     xo = "o";
@@ -141,7 +141,6 @@
         if (board[arr[2]] != xo && board[arr[2]] != comp) {
           if (board[arr[1]] == move) {
             board[arr[2]] = comp;
-            console.log("MOve:" + move);
             return board;
           }
         }
@@ -149,7 +148,6 @@
       
       if (board[arr[0]] == board[arr[2]]) {
         if (board[arr[1]] != xo && board[arr[1]] != comp) {
-          console.log("MOve:" + move);
           if (board[arr[2]] == move) {
             board[arr[1]] = comp;
             return board;
@@ -159,10 +157,7 @@
       
       if (board[arr[1]] == board[arr[2]]) {
         if (board[arr[0]] != xo && board[arr[0]] != comp) {
-          console.log("MOve:" + move);
-          console.log(board[arr[2]] == move);
-          console.log(board);
-          if (board[arr[2]] == move) {
+          if(board[arr[2]] == move) {
             board[arr[0]] = comp;
             return board;
           }
@@ -170,16 +165,13 @@
       }
 
       if (h < 7) {
-        console.log("h = " + h);
         h = h + 1;
-        console.log("COmp:" + comp + h);
         return Complay(arrInd[h], comp);
       }
       
       if (j < 7) {
         j = j + 1;
         return Complay(arrInd[j], xo);
-        console.log("xo:" + xo);
       }
       
       if (board.indexOf(comp) == -1) {
@@ -202,8 +194,6 @@
           case (indxo):
             board[8 - indxo] = comp;
             return board;
-            console.log("inx" + board.indexOf(xo));
-            console.log(board);
         }
       } 
       else if (board[4] != xo && board[4] != comp) {

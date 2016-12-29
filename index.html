@@ -1,46 +1,43 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Tic-Tac-Toe game</title>
-		<meta charset="utf-8">    	
-		<link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" type='text/css'>
-		<link rel="stylesheet" href="styles.css" type='text/css'>
-		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>    	
-    	<script type="text/javascript" src="./script.js"></script>
-	</head>
-	<body>
-		<div class="container-fluid">
-		  <div class="gamefield row">
-		    <div class="wrapper col-md-4">
-		      <div class="overlay"></div>
-
-		      <div class="row1">
-		        <div class="oo box c">-</div>
-		        <div class="ot box c">-</div>
-		        <div class="oth box c">-</div>
-		      </div>
-		      <br>
-		      <div class="row2">
-		        <div class="to box c">-</div>
-		        <div class="tt box c">-</div>
-		        <div class="tth box c">-</div>
-		      </div><br>
-		      <div class="row3">
-		        <div class="tho box c">-</div>
-		        <div class="tht box c">-</div>
-		        <div class="thth box c">-</div>
-		      </div>
-		    </div>
-
-		    <div class="controls col-md-4">
-		      <p class="select anim"> Select role: </p>
-		      <button class="x anim">X</button>
-		      <button class="o anim">O</button>
-		      <button class="clear">Clear</button>
-		    </div>
-		  </div>
-		</div>
-	</body>
+<head>
+	<title>Tic-Tac-Toe game</title>
+	<meta charset="utf-8">    	
+	<link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" type='text/css'>
+	<link rel="stylesheet" href="styles.css" type='text/css'>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>    	
+	<script type="text/javascript" src="./script.js"></script>
+</head>
+<body>
+  <div class="container-fluid  gamearea">
+    <div class="gamefield">
+      <div class="overlay"></div>
+      <table>
+      <tr class="row1">
+        <td class="oo box c">-</td>
+        <td class="ot box c">-</td>
+        <td class="oth box c">-</td>
+      </tr>
+      <tr class="row2">
+        <td class="to box c">-</td>
+        <td class="tt box c">-</td>
+        <td class="tth box c">-</td>
+      </tr>
+      <tr class="row3">
+        <td class="tho box c">-</td>
+        <td class="tht box c">-</td>
+        <td class="thth box c">-</td>
+      </tr>
+      </table>
+    </div>
+    <div class="controls">
+      <p class="select anim"> Select role: </p>
+      <button class="x anim">X</button>
+      <button class="o anim">O</button>
+      <button class="clear">Clear</button>
+    </div>
+  </div>
+</body>
 </html>
